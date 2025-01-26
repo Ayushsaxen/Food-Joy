@@ -1,0 +1,215 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.bg-navbar {
+  background-color: rgb(74, 15, 15) !important;
+}
+.btn-outline-white {
+  color: white;
+  border: 1px solid white;
+}
+.btn-outline-white:hover {
+  background-color: rgb(179, 0, 0);
+  border: 1px solid rgb(214, 214, 214);
+}
+.mx-btn-h:hover {
+  background-color: rgb(179, 0, 0);
+  border: 1px solid rgb(214, 214, 214);
+}
+h2 {
+  color: black;
+  font-size: 24px;
+}
+.card {
+  background-color: rgb(74, 4, 4);
+}
+.card-body-form {
+  background-color: rgb(120 0 0);
+  border-radius: 25px;
+}
+.mx-card-login {
+  background-color: unset !important;
+}
+.alert-warning {
+  /* color: #f7ba59; */
+  background-color: #372406 !important;
+  border-color: #925e0b;
+}
+.bg-h2 {
+  color: white !important;
+  font-weight: bolder;
+  font-size: 36px;
+}
+.carousel-fade-out .carousel-item {
+  opacity: 1;
+  transition: opacity 5s ease-in-out;
+}
+
+.carousel-fade-out .carousel-item-next,
+.carousel-fade-out .carousel-item-prev,
+.carousel-fade-out .carousel-item.active {
+  opacity: 1;
+}
+
+.carousel-item {
+  transition: opacity 5s ease-in-out;
+}
+input {
+  color: white;
+}
+
+/* Base styles */
+.about-us-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  gap: 30px;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.left-side {
+  flex: 1;
+  max-width: 50%;
+  min-width: 300px; /* Ensures left side doesn't get too small */
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.right-side {
+  flex: 1;
+  max-width: 50%;
+  text-align: left;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.text {
+  font-size: 1.2rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  .about-us-container {
+    flex-direction: column; /* Stack elements vertically */
+    padding: 20px; /* Less padding on mobile */
+    gap: 20px;
+  }
+
+  .left-side,
+  .right-side {
+    max-width: 100%; /* Take full width on mobile */
+  }
+
+  .title {
+    font-size: 1.8rem; /* Smaller title on mobile */
+  }
+
+  .text {
+    font-size: 1rem; /* Smaller text on mobile */
+  }
+}
+
+/* OurTeam.css */
+.our-team {
+  text-align: center;
+  padding: 40px;
+}
+
+.our-team h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.team-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 25px;
+}
+
+.team-member {
+  background-color: #550505;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.team-member-img {
+  width: 100%;
+  height: 250px;
+  margin-bottom: 10px;
+  object-fit: cover;
+}
+
+.team-member h3 {
+  font-size: 1.5em;
+  margin: 5px 0;
+}
+
+.team-member p {
+  font-size: 1em;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .team-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .team-container {
+    grid-template-columns: 1fr;
+  }
+  .mx-food-joy-heading {
+    font-size: 14px !important;
+  }
+  .our-team {
+    text-align: center;
+    padding: 10px;
+  }
+  footer {
+    font-size: 16px;
+  }
+  .mx-footer {
+    font-size: 14px !important;
+  }
+}
+
+.about-us-container {
+  flex-wrap: unset;
+}
+.mx-btn {
+  display: flex;
+  justify-content: space-between;
+}
+.form-control {
+  color: #b1b1b1;
+  background-color: #ffffff !important;
+  border: 1px solid #515151;
+}
+svg {
+  color: white;
+  margin: 0px 10px;
+}
+.mx-close {
+  margin: 0px 20px;
+  color: red;
+  background-color: rgb(62, 1, 1);
+  padding: 5px 10px;
+}
